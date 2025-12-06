@@ -2,11 +2,10 @@
 <html lang="pt-BR">
 <head>
     <meta property="og:title" content="iGreen Energy - Thaynara Matos">
-<meta property="og:description" content="Energia Solar - Assista este vídeo de 1 minuto">
-<meta property="og:image" content="URL_DA_IMAGEM_DE_PREVIEW">
-<meta property="og:url" content="https://thaynaraigreen.netlify.app">
-<meta property="og:type" content="website">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Energia Solar - Assista este vídeo de 1 minuto">
+    <meta property="og:image" content="logobrand.png">
+    <meta property="og:url" content="https://thaynaraigreen.netlify.app">
+    <meta property="og:type" content="website">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +33,6 @@
             padding: 20px;
         }
 
-        /* Banner de Indicação */
         .indicacao-banner {
             background: linear-gradient(135deg, #00ff00 0%, #00cc00 100%);
             padding: 15px 20px;
@@ -56,12 +54,6 @@
             font-size: 0.9em;
         }
 
-        .indicacao-banner .nome-indicador {
-            font-size: 1.3em;
-            font-weight: 900;
-        }
-
-        /* Header com Logo */
         .header {
             text-align: center;
             padding: 20px 0;
@@ -75,7 +67,6 @@
             margin: 0;
         }
 
-        /* Área de Conteúdo Informativo */
         .info-section {
             background: rgba(255, 255, 255, 0.05);
             padding: 25px 20px;
@@ -93,7 +84,6 @@
             box-shadow: 0 10px 30px rgba(0, 255, 0, 0.2);
         }
 
-        /* Como Funciona Section */
         .como-funciona {
             background: rgba(0, 0, 0, 0.5);
             padding: 60px 30px;
@@ -155,7 +145,6 @@
             line-height: 1.6;
         }
 
-        /* App Section */
         .app-section {
             background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             padding: 60px 30px;
@@ -200,7 +189,6 @@
             margin-right: 10px;
         }
 
-        /* Vantagens Section */
         .vantagens-section {
             background: rgba(0, 255, 0, 0.05);
             padding: 60px 30px;
@@ -242,7 +230,6 @@
             margin-right: 15px;
         }
 
-        /* FAQ Section */
         .faq-section {
             background: rgba(0, 0, 0, 0.5);
             padding: 60px 30px;
@@ -321,7 +308,6 @@
             margin: 0;
         }
 
-        /* Botão CTA Principal */
         .cta-section {
             text-align: center;
             padding: 60px 20px;
@@ -352,7 +338,6 @@
             cursor: not-allowed;
         }
 
-        /* Formulário */
         .form-section {
             display: none;
             background: rgba(255, 255, 255, 0.05);
@@ -437,6 +422,7 @@
             background: rgba(0, 0, 0, 0.3);
             cursor: pointer;
             transition: all 0.3s ease;
+            position: relative;
         }
 
         .file-upload:hover {
@@ -445,13 +431,22 @@
         }
 
         .file-upload input[type="file"] {
-            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 2;
         }
 
         .file-upload-label {
             color: #00ff00;
             font-size: 1.1em;
             cursor: pointer;
+            pointer-events: none;
+            display: block;
         }
 
         .submit-button {
@@ -515,7 +510,6 @@
             font-size: 0.8em;
         }
 
-        /* Animação de pulso para CTA do vídeo */
         @keyframes pulse {
             0%, 100% {
                 transform: scale(1);
@@ -535,7 +529,6 @@
             padding: 20px;
         }
 
-        /* Responsivo */
         @media (max-width: 768px) {
             .cta-button {
                 font-size: 1.5em;
@@ -562,10 +555,6 @@
                 font-size: 0.75em;
             }
 
-            .indicacao-banner .nome-indicador {
-                font-size: 1.1em;
-            }
-
             .header {
                 padding: 10px 0;
             }
@@ -577,18 +566,15 @@
     </style>
 </head>
 <body>
-    <!-- Banner de Indicação -->
     <div class="indicacao-banner">
-        <p><span class="licenciada">Licenciada Autorizada iGreen Energy: Thaynara Matos</span><br>
+        <p><span class="licenciada">Licenciada Autorizada iGreen Energy: Thaynara Matos</span></p>
     </div>
 
-    <!-- Header com Logo -->
     <div class="header">
         <img src="logobrand.png" alt="iGreen Energy" class="logo">
     </div>
 
     <div class="container">
-        <!-- Seção de Vídeo -->
         <div class="info-section">
             <div style="text-align: center; margin-bottom: 30px;">
                 <h2 style="color: #00ff00; font-size: 2.3em; margin-bottom: 10px; text-transform: uppercase; font-weight: bold;">
@@ -621,7 +607,6 @@
             </div>
         </div>
 
-        <!-- Como Funciona -->
         <div class="como-funciona">
             <h2>💡 Como Funciona a Conexão Green</h2>
             
@@ -658,7 +643,6 @@
             </div>
         </div>
 
-        <!-- App iGreen Club -->
         <div class="app-section">
             <h2>AO SE CADASTRAR VOCÊ TERÁ ACESSO AO APLICATIVO IGREEN CLUB</h2>
             <p class="subtitle">Exclusivo para Contas iGreen</p>
@@ -678,7 +662,6 @@
             </div>
         </div>
 
-        <!-- Vantagens -->
         <div class="vantagens-section">
             <h2>🌟 VANTAGENS DE SER IGREEN ENERGY</h2>
             
@@ -696,7 +679,6 @@
             </div>
         </div>
 
-        <!-- FAQ -->
         <div class="faq-section">
             <h2>❓ PERGUNTAS FREQUENTES</h2>
             <p class="faq-subtitle">Tire suas dúvidas e entenda como economizar energia de forma consciente</p>
@@ -824,14 +806,12 @@
             </div>
         </div>
 
-        <!-- Botão CTA Final -->
         <div class="cta-section">
             <button class="cta-button" onclick="showForm()">
                 ⚡ QUERO MEU DESCONTO ⚡
             </button>
         </div>
 
-        <!-- Formulário de Cadastro -->
         <div class="form-section" id="formSection">
             <h2>📋 Cadastre-se Agora!</h2>
             <p class="subtitle">Preencha os dados do TITULAR DA CONTA DE ENERGIA</p>
@@ -873,38 +853,37 @@
 
                 <div class="form-group">
                     <label for="contaEnergia">Envie uma foto da sua conta de energia mais recente 📸 <span class="required">*</span></label>
-                    <div class="file-upload" onclick="document.getElementById('contaEnergia').click()">
+                    <div class="file-upload">
                         <input type="file" id="contaEnergia" name="contaEnergia" accept="image/*" required onchange="updateFileName(this, 'fileNameConta')">
-                        <label for="contaEnergia" class="file-upload-label">
+                        <div class="file-upload-label">
                             📄 Clique aqui para fazer upload da Conta de Energia<br>
                             <span id="fileNameConta" style="font-size: 0.9em; color: #888;">Nenhum arquivo selecionado</span>
-                        </label>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="rgFrente">Envie uma foto do seu RG - FRENTE <span class="required">*</span></label>
-                    <div class="file-upload" onclick="document.getElementById('rgFrente').click()">
+                    <div class="file-upload">
                         <input type="file" id="rgFrente" name="rgFrente" accept="image/*" required onchange="updateFileName(this, 'fileNameFrente')">
-                        <label for="rgFrente" class="file-upload-label">
+                        <div class="file-upload-label">
                             📷 Clique aqui para fazer upload da FRENTE do RG<br>
                             <span id="fileNameFrente" style="font-size: 0.9em; color: #888;">Nenhum arquivo selecionado</span>
-                        </label>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="rgVerso">Envie uma foto do seu RG - VERSO <span class="required">*</span></label>
-                    <div class="file-upload" onclick="document.getElementById('rgVerso').click()">
+                    <div class="file-upload">
                         <input type="file" id="rgVerso" name="rgVerso" accept="image/*" required onchange="updateFileName(this, 'fileNameVerso')">
-                        <label for="rgVerso" class="file-upload-label">
+                        <div class="file-upload-label">
                             📷 Clique aqui para fazer upload do VERSO do RG<br>
                             <span id="fileNameVerso" style="font-size: 0.9em; color: #888;">Nenhum arquivo selecionado</span>
-                        </label>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Barra de progresso -->
                 <div class="upload-progress" id="uploadProgress">
                     <p style="color: #00ff00; text-align: center; margin-bottom: 10px;">Fazendo upload das imagens...</p>
                     <div class="progress-bar">
@@ -920,26 +899,20 @@
     </div>
 
     <script>
-        // ====================================
-        // CONFIGURAÇÃO DO SUPABASE
-        // ====================================
         const SUPABASE_URL = 'https://vxmearsrwpxhqldaiveg.supabase.co';
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4bWVhcnNyd3B4aHFsZGFpdmVnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQxODY0NjYsImV4cCI6MjA3OTc2MjQ2Nn0.3A9FwyJaC3MGB4icXJerpSWrM2JZiSXoyXLULZCA-no';
         
         const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-        // Mostrar formulário ao clicar no CTA
         function showForm() {
             const formSection = document.getElementById('formSection');
             formSection.classList.add('active');
             formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
-        // Mostrar página de agradecimento
         function showThankYouPage(cadastroId) {
             const container = document.querySelector('.container');
             
-            // Criar página de agradecimento
             const thankYouHTML = `
                 <div class="thank-you-page" style="
                     background: rgba(255, 255, 255, 0.05);
@@ -1004,17 +977,14 @@
                 </div>
             `;
             
-            // Adicionar ao container
             container.innerHTML += thankYouHTML;
             
-            // Scroll suave até a página de agradecimento
             document.querySelector('.thank-you-page').scrollIntoView({ 
                 behavior: 'smooth', 
                 block: 'center' 
             });
         }
 
-        // Toggle FAQ
         function toggleFaq(element) {
             const faqItem = element.parentElement;
             const isActive = faqItem.classList.contains('active');
@@ -1028,7 +998,6 @@
             }
         }
 
-        // Atualizar nome do arquivo
         function updateFileName(input, spanId) {
             const fileName = input.files[0]?.name || 'Nenhum arquivo selecionado';
             const span = document.getElementById(spanId);
@@ -1036,7 +1005,6 @@
             span.style.color = '#00ff00';
         }
 
-        // Máscara para telefone
         function applyPhoneMask(e) {
             let value = e.target.value.replace(/\D/g, '');
             if (value.length <= 11) {
@@ -1049,14 +1017,12 @@
         document.getElementById('whatsapp1').addEventListener('input', applyPhoneMask);
         document.getElementById('whatsapp2').addEventListener('input', applyPhoneMask);
 
-        // Máscara para CEP
         document.getElementById('cep').addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             value = value.replace(/^(\d{5})(\d)/, '$1-$2');
             e.target.value = value;
         });
 
-        // Função para comprimir imagem
         async function compressImage(file) {
             return new Promise((resolve) => {
                 const reader = new FileReader();
@@ -1101,7 +1067,6 @@
             });
         }
 
-        // Fazer upload de imagem
         async function uploadImage(file, tipo) {
             try {
                 const compressedFile = await compressImage(file);
@@ -1130,14 +1095,12 @@
             }
         }
 
-        // Atualizar progresso
         function updateProgress(percent) {
             const progressFill = document.getElementById('progressFill');
             progressFill.style.width = percent + '%';
             progressFill.textContent = Math.round(percent) + '%';
         }
 
-        // Manipular envio do formulário
         async function handleSubmit(event) {
             event.preventDefault();
             
@@ -1161,8 +1124,8 @@
                     throw new Error('Por favor, selecione todas as fotos (Conta de Energia + RG frente e verso).');
                 }
                 
-                if (contaEnergia.size > 5 * 1024 * 1024 || rgFrente.size > 5 * 1024 * 1024 || rgVerso.size > 5 * 1024 * 1024) {
-                    throw new Error('As imagens devem ter no máximo 5MB cada.');
+                if (contaEnergia.size > 100 * 1024 * 1024 || rgFrente.size > 100 * 1024 * 1024 || rgVerso.size > 100 * 1024 * 1024) {
+                    throw new Error('As imagens devem ter no máximo 100MB cada.');
                 }
                 
                 updateProgress(5);
@@ -1207,13 +1170,9 @@
                 updateProgress(100);
                 
                 setTimeout(() => {
-                    // Ocultar formulário
                     document.getElementById('formSection').style.display = 'none';
-                    
-                    // Mostrar página de agradecimento
                     showThankYouPage(data[0].id);
                     
-                    // Resetar formulário para próximo uso
                     event.target.reset();
                     document.getElementById('fileNameConta').textContent = 'Nenhum arquivo selecionado';
                     document.getElementById('fileNameConta').style.color = '#888';
